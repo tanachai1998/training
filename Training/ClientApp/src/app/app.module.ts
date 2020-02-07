@@ -11,6 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { DefaultLayoutComponent } from './default-layout/default-layout/default-layout.component';
 import { TrainingComponent } from './training/training.component';
+import { CreateSlideshowComponent } from './slideshow/create-slideshow/create-slideshow.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { TrainingComponent } from './training/training.component';
     FetchDataComponent,
     DefaultLayoutComponent,
     TrainingComponent,
-
+    CreateSlideshowComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -45,7 +46,7 @@ import { TrainingComponent } from './training/training.component';
         },
         children: [
           { path: 'training', component: TrainingComponent },
-
+          { path: 'slide/create', component: CreateSlideshowComponent },
         ]
       }
     ]),
