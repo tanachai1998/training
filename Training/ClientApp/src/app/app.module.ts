@@ -10,8 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { DefaultLayoutComponent } from './default-layout/default-layout/default-layout.component';
-import { TrainingComponent } from './training/training.component';
-import { SlideshowComponent } from './slideshow/slideshow.component';
+import { TrainingComponent } from './training/training.
+import { SlideshowComponent } from './slideshow/slideshow.component
+import { CreateTrainingComponent } from './training/create-training/create-training.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,9 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     CounterComponent,
     FetchDataComponent,
     DefaultLayoutComponent,
-    TrainingComponent,
+    TrainingComponent
     SlideshowComponent,
+    CreateTrainingComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -47,6 +49,7 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
         children: [
           { path: 'training', component: TrainingComponent },
           { path: 'slideshow', component: SlideshowComponent },
+          { path: 'training/create', component: CreateTrainingComponent },
         ]
       }
     ]),
