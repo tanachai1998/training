@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { DefaultLayoutComponent } from './default-layout/default-layout/default-layout.component';
+import { TrainingComponent } from './training/training.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { DefaultLayoutComponent } from './default-layout/default-layout/default-
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    DefaultLayoutComponent
+    DefaultLayoutComponent,
+    TrainingComponent,
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -36,6 +39,7 @@ import { DefaultLayoutComponent } from './default-layout/default-layout/default-
           title: 'หน้าหลัก'
         },
         children: [
+          { path: 'training', component: TrainingComponent },
 
         ]
       }
