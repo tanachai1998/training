@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { DefaultLayoutComponent } from './default-layout/default-layout/default-layout.component';
+import { TrainingComponent } from './training/training.component';
+import { CreateSlideshowComponent } from './slideshow/create-slideshow/create-slideshow.component';
 import { TrainingComponent } from './training/training.
 import { SlideshowComponent } from './slideshow/slideshow.component
 import { CreateTrainingComponent } from './training/create-training/create-training.component';
@@ -22,7 +24,9 @@ import { CreateTrainingComponent } from './training/create-training/create-train
     CounterComponent,
     FetchDataComponent,
     DefaultLayoutComponent,
-    TrainingComponent
+    TrainingComponent,
+    CreateSlideshowComponent,
+    TrainingComponent,
     SlideshowComponent,
     CreateTrainingComponent,
   ],
@@ -48,6 +52,7 @@ import { CreateTrainingComponent } from './training/create-training/create-train
         },
         children: [
           { path: 'training', component: TrainingComponent },
+          { path: 'create-slideshow', component: CreateSlideshowComponent },
           { path: 'slideshow', component: SlideshowComponent },
           { path: 'training/create', component: CreateTrainingComponent },
         ]
