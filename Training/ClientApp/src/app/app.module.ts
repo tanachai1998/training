@@ -28,7 +28,12 @@ import { TrainingComponent } from './training/training.component';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      // { path: '', component: HomeComponent, pathMatch: 'full' },
+      {
+        path:'',
+        pathMatch:'full',
+        redirectTo:'training'
+      },
       { path: 'counter', component: CounterComponent },
       // { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
       // { path: 'login', component: LoginComponent },
