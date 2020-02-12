@@ -12,8 +12,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { DefaultLayoutComponent } from './default-layout/default-layout/default-layout.component';
 import { TrainingComponent } from './training/training.component';
 import { CreateSlideshowComponent } from './slideshow/create-slideshow/create-slideshow.component';
-import { TrainingComponent } from './training/training.
-import { SlideshowComponent } from './slideshow/slideshow.component
+
+import { SlideshowComponent } from './slideshow/slideshow.component';
 import { CreateTrainingComponent } from './training/create-training/create-training.component';
 
 @NgModule({
@@ -26,7 +26,7 @@ import { CreateTrainingComponent } from './training/create-training/create-train
     DefaultLayoutComponent,
     TrainingComponent,
     CreateSlideshowComponent,
-    TrainingComponent,
+    
     SlideshowComponent,
     CreateTrainingComponent,
   ],
